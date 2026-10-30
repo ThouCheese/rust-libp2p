@@ -4,6 +4,8 @@
   notify the poller of the `Connection` by yielding an error.
 - Switch to a fallible binding for `createDataChannel`, allowing for graceful
   recovery from closed connections.
+- Add Drop impl to `PollDataChannel` that unsets event handlers when the stream
+  gets dropped.
 
 ## 0.5.0
 
