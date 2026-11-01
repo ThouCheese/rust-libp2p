@@ -2,6 +2,8 @@
 
 - Detect when the browser interrupts a connection in the error handler, and then
   notify the poller of the `Connection` by yielding an error.
+- Switch to a fallible binding for `createDataChannel`, allowing for graceful
+  recovery from closed connections.
 
 ## 0.5.0
 
